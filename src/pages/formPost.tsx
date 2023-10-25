@@ -12,7 +12,7 @@ type Post = {
 export const MyComponent = () => {
   const mutationKey = "new-post";
 
-  const { mutate,  error } = usePostData<Post>([mutationKey], async (data: Post) => {
+  const { mutate,   error } = usePostData<Post>([mutationKey], async (data: Post) => {
     const response = await axios.post<Post>(
       "http://localhost:5000/posts",
       data
@@ -23,17 +23,16 @@ export const MyComponent = () => {
 
   const handlePostSubmit = async (event: FormEvent<HTMLFormElement>) => {
 
-    const post<T ,Post> = {
-      id: event.target.id,
-      name: event.target.name,
-      title: event.target.title,
-      body: event.target.body,
-      Name: event.target.Name,
-    };
+    // const post = {
+    //     title: (event.target as HTMLInputElement).title,
+    //     body: (event.target as HTMLInputElement).body,
+    //     Name: (event.target as HTMLInputElement).Name,
+      
+    // };
   
   
 
-    await mutate(post);
+    // await mutate(post);
   };
 
 //   if (isLoading) {
