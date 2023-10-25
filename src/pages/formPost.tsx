@@ -2,6 +2,7 @@ import { usePostData } from "../customHook/usePostData";
 import { FormEvent } from "react";
 import axios from "axios";
 
+
 type Post = {
   id: number;
   Name:string;
@@ -14,7 +15,7 @@ export const MyComponent = () => {
 
   const { mutate,   error } = usePostData<Post>([mutationKey], async (data: Post) => {
     const response = await axios.post<Post>(
-      "http://localhost:5000/posts",
+      "http://localhost:5000/addRegion",
       data
     );
 
