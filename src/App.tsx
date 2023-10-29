@@ -3,6 +3,8 @@ import Posts from './pages/Post';
 import { MyComponent } from './pages/newPage';
 import InstructCreateCourse from './pages/PageFormik';
 import Pdf from './pages/Pdf';
+import RubricComponent from './pages/Rubric';
+import PdfNew from './pages/pdf2';
 import './App.css';
 
 function App() {
@@ -10,7 +12,9 @@ function App() {
     <div className="App">
       {/* <Posts/> */}
       {/* <MyComponent/> */}
-      <Pdf/>
+      {/* <Pdf/> */}
+      <PdfNew/>
+      {/* <RubricComponent/> */}
 
     </div>
   );
