@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   useQuery,
   useMutation,

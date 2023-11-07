@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 // import "./styles.css";
- import {pdfjs} from 'pdfjs-dist/build/pdf';
+//  import {pdfjs} from 'pdfjs-dist/build/pdf';
 // const pdfjsWorker = await import('pdfjs-dist/build/pdf.worker.entry');
 
-pdfjs.GlobalWorkerOptions.workerSrc = ('pdfjs-dist/build/pdf.worker.entry');;
+// pdfjs.GlobalWorkerOptions.workerSrc = ('pdfjs-dist/build/pdf.worker.entry');;
 
 
 
